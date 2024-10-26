@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        <input type="text" id="input" placeholder="Add your new todo">
+        <button onclick="add()" id="add">+</button>
+        <ul id="container-list">
+            <li>Buy a new gaming laptop <button onclick="remove(event)">delete</button></li>
+            <li>Complete a previous task <button onclick="remove(event)">delete</button></li>
+            <li>Create  video for youtube <button onclick="remove(event)">delete</button></li>
+            <li>Create a new portfolio site <button onclick="remove(event)">delete</button></li>
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
