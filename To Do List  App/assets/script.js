@@ -1,10 +1,16 @@
 var ul = document.getElementById("container-list")
-var input = document.getElementById("input")
+
 function add(){
-    var list = document.createElement("li")
-    list.innerHTML = input.value + "<button onclick='remove(event)'>delete</button>"
-    ul.append(list)
+    var input = document.getElementById("input").value
+    if(input.length >= 1){
+        var list = document.createElement("li")
+        list.innerHTML = input + "<button onclick='remove(event)'>delete</button>"
+        ul.append(list)
+        document.getElementById("input").value = ""
+    }
+    
 }
 function remove(event){
     event.target.parentElement.remove()
 }
+
